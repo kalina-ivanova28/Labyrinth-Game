@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-red: #420d16;
+  --color-white: rgb(143, 118, 118);
+  --color-black-1: #111;
+  --color-black-2: #222;
+  --color-yellow: rgb(255, 211, 67);
+  --speed-normal: 0.5s;
+  --speed-fast: 0.8s;
+}
+html{
+    background-color: rgb(53, 11, 11);
+}
+canvas{
+    position:fixed;
+    top:30%;
+    left:25%;
+}
+
+t1{
+    position:fixed;
+    left:275px;
+}
+
+p{
+    position:fixed;
+    top: 515px;
+    left:22%;
+    color:rgb(129, 129, 129);
+    font-size:30px;
+}
+
+figure#girlchar{
+    position:fixed;
+    left: 50px;
+    top:180px;
+}
+
+figure#boychar{
+    position:fixed;
+    left: 1000px;
+    top:180px;
+}
+
+button#boy{
+    position:fixed;
+    left: 1025px;
+    top: 120px;
+}
+
+button#girl{
+    position:fixed;
+    left:80px;
+    top: 120px;
+}
+
+button#startbtn{
+    position: fixed;
+    left: 80px;
+    top: 50px;
+}
+button#stick{
+    position: absolute;
+    left:200px;
+}
+button#sword{
+    position: absolute;
+    left:400px;
+}
+
+button{
+    width: 150px;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  background-color: rgb(85, 26, 26);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-black-3);
+  transition: var(--speed-normal);
+  border: 1px solid var(--color-red);
+}
+button:hover {
+    border: 1px solid transparent;
+    background: var(--color-red) 
+    url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+    transition-delay: 0.8s;
+    background-size: 180px;
+    animation: animate var(--speed-fast) steps(8) forwards;
+}
+button:last-of-type {
+    border: 1px solid var(--color-red);
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}

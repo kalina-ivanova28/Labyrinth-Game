@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dreamer</title>
+    <link rel="stylesheet" type="text/css" href="styleClear.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+
+    
+    <t1><img src="0001.png" width="700" height="250" id="title" hidden></t1>
+    <video id="video" src="vidintro.mp4" width="100%" height="100%" controls autoplay ></video>
+
+    <canvas id="canvas" width="600" height="350" style="border:1px solid #000000;" hidden></canvas> 
+   
+    <p id="Start" hidden>Choose a character and then press Start to start the game.</p>
+    <p id="Lab" hidden>Quick! Find a way out of the Labyrinth! Move with the arrows!</p>
+    <p id="room" hidden>Choose a weapon and fight the monster!</p>
+    <button hidden onclick="Labyrinth()" id="startbtn">Start</button>
+    <button hidden onclick="ChooseBoy()" id="boy">Boy</button>
+    <button hidden onclick="ChooseGirl()" id="girl">Girl</button>
+    <figure hidden id="boychar"><img src="male character.png" width="150px" height="300px"></figure>
+    <figure hidden  id="girlchar"><img src="female character.png" width="150px" height="300px"></figure>
+    <p><button onclick="ChooseStick()" id="stick" hidden>Choose Stick</button>
+    <button onclick="ChooseSword()" id="sword" hidden>Choose Sword</button></p>
+    <video hidden id="girlenter"  src="femaleEnterRoom.mp4" width="100%" height="100%" controls></video>
+    <video hidden id="girlsword" src="femaleSwordEnd.mp4" width="100%" height="100%" controls></video>
+    <video hidden id="girlstick" src="femaleStickFinal.mp4" width="100%" height="100%" controls></video>
+    <video hidden id="boyenter"  src="maleEnterRoom.mp4" width="100%" height="100%" controls></video>
+    <video hidden id="boysword" src="maleSwordEnd.mp4" width="100%" height="100%" controls></video>
+    <video hidden id="boystick" src="maleStickFinal.mp4" width="100%" height="100%" controls></video>
+
+    <script type="text/javascript" src='main.js'></script>
+</body>
+</html>
